@@ -1,0 +1,85 @@
+*,::before,::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container {
+    /*display: grid;
+    grid-template-columns: 40% 40%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.facture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.facture h2 {
+    justify-content: center;
+}
+
+.facture .tableau {
+    background-color:  #060044;
+    color: white;
+    border-radius: 45px;
+    align-items: stretch;
+    flex-basis: 200px;
+    min-width: 50%;
+    display: flex;
+    padding: 1rem;
+}
+
+.facture table {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pay-meth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 50%;
+}
+
+.pay-meth h2 {
+    align-self: center;
+}
+
+.pay-meth .btn-group {
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.visa {
+    display: grid;
+    grid-template-areas: 
+        "numcarte numcarte"
+        "date ccv"
+        "pays pays"
+        "payer";
+}
+
+.visa > .info > .numero-carte {
+    grid-area: numcarte;
+}
+
+.visa > .info > .expiry {
+    grid-area: date;
+}
+
+.visa > .info > .ccv {
+    grid-area: ccv;
+}
+
+.visa > .info > #pays {
+    grid-area: pays;
+}
+
+

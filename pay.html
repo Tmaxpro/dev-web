@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Paiement</title>
+        <link rel="stylesheet" href="pay.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="facture">
+                <h2>FACTURE</h2>
+                <div class="tableau">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Articles</th>
+                                <th>Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#service</td>
+                                <td>#prix</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Prix total</th>
+                                <th>#prixtotal</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="pay-meth">
+                <h2>Méthode de paiement</h2>
+                <div class="btn-group">
+                    <!--<button>Orange Money</button>
+                    <div class="content">
+                        <form>
+                        <label for="numero">Numéro de téléphone</label>
+                        <input type="text" name="numero">
+                        </form>
+                        <button type="submit">Continuer</button>
+                    </div>-->
+                    <button>VISA</button>
+                    <div class="visa">
+                        <form class="info">
+                        <input type="text" name="numero-carte" class="numero-carte" placeholder="Numéro de carte">
+                        <input type="text" name="expiry" class="expiry" placeholder="Date d'expiration">
+                        <input type="text" name="ccv" class="ccv" placeholder="CCV">
+                        <select name="pays" id="pays" aria-placeholder="Pays"></select>
+                        </form>
+                        <button type="submit">Payer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

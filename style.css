@@ -1,0 +1,194 @@
+@import url(https://fonts.google.com/specimen/Nova+Mono?preview.size=42&query=nova+m&sort=popularity);
+@import url(https://fonts.google.com/specimen/Roboto+Flex);
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #060044;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav > .logo {
+    font-family: 'Nova Mono', 'Roboto';
+    color:  white;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.search input{
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 41px;
+    border: none;
+}
+
+.btn {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.000001);
+    border: none;
+    cursor: pointer;
+}
+.search-icon {
+    width: 72px;
+    height: 72px;
+}
+
+
+.first-part {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel liste-metier";
+    gap: 8px;
+}
+
+.carousel{
+    grid-area: carousel;
+    border-radius: 85px;
+}
+
+.carousel > img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.liste-metier {
+    border-radius: 20px;
+    grid-area: liste-metier;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.liste-metier ul li {
+    list-style: none;
+}
+
+.first-part .liste a {
+    text-decoration: none;
+    color: #000;
+}
+
+.liste {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 50px;
+    font-family: 'Roboto Flex';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 47px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.second-part {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 1rem;
+    gap: 12px;
+}
+
+.second-part button {
+    --button_radius: 0.75em;
+    --button_color: #fff;
+    --button_outline_color: #000000;
+    --shadow-color: rgba(6, 0, 68, 0.2);
+    --highlight-color: rgba(6, 0, 68, 0.2);
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: linear-gradient(
+        to bottom right,
+        var(--highlight-color),
+        var(--shadow-color)
+      );
+    box-shadow: 0px 4px 4px var(--shadow-color),
+      0px -4px 4px var(--highlight-color);
+    cursor: pointer;
+}
+  
+.second-part .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+  
+.second-part button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+  
+.second-part button:active .button_top {
+    transform: translateY(0);
+}
+
+.second-part .button_top .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.second-part .button_top .container .left {
+    padding: 20px;
+}
+  
+.second-part .button_top .container .right {
+    padding: 20px;
+}
+  
+.second-part .button_top .container img {
+    width: 100%;
+    height: auto;
+    border-radius: 85px;
+}
+
+footer {
+    background-color: #060044;
+    display: grid;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+    grid-template-columns: 25% 25% 25% 25%;
+    min-height: 200px;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.first-footer-part a{
+    line-height: 1.5;
+}
